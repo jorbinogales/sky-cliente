@@ -1,0 +1,130 @@
+#banner{
+	position:relative;
+	display: block;
+	width: 100%;
+	height: 300px;
+	background-position:center;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.bg-red{
+	display: block;
+	width: 100%;
+	height:8px;
+	background:red;
+	margin-top:5px;
+}
+
+#body-login{
+	position:absolute;
+	display: block;
+
+	left:0;
+	right:0;
+	top:100px;
+
+	margin:auto;
+	background:transparent;
+}
+
+#body-login img{
+	max-width: 120px;
+	display: block;
+	margin:auto;
+}
+
+#body-login .card{
+	margin:auto;
+	max-width: 400px;
+	box-shadow: 19px 10px 20px 2px rgba(0,0,0,.5);
+	border-radius: 10px;
+	background-color:#EEEEEF;
+}
+
+#body-login h3{
+	display: block;
+	margin:auto;
+	text-align: center;
+	color:white;
+}
+
+#body-login .card p{
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	margin-top:15px;
+}
+
+#body-login .card input[type="email"],
+#body-login .card input[type="password"],
+#body-login .card input[type="text"]{
+	background-color: #CECDCE;
+	outline: transparent !important;
+	font-weight: bold;
+	color:black;
+	display: block;
+	width:100%;
+	padding: 15px 15px;
+	border-radius: 10px;
+	border:none;
+	outline: none;
+	font-size:12px;
+
+}
+
+.red-gradient{
+  display: block;
+  width: 100%;
+  background: rgb(223,35,32);
+  background: linear-gradient(180deg, rgba(223,35,32,1) 0%, rgba(161,34,26,1) 100%);
+  color: #fff;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius:10px
+}
+
+.info{
+	display: block;
+
+	margin:auto;
+	
+	margin-top:20px;
+
+	text-align: center;
+	font-weight: bold;
+}
+
+.info a{
+	display: block;
+	text-decoration: none;
+	color: red;
+}
+
+.list-alert{
+	position:absolute;
+	top:15px;
+	right:15px;
+	max-width: 300px;
+	opacity: 0;
+	transform: translateX(100%);
+	animation: mostrar-alerts 3s ease-in-out forwards;
+}
+
+@keyframes mostrar-alerts{
+	0%{
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	25%{
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(100%);
+		opacity: 0;
+	}
+}
